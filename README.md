@@ -1,4 +1,4 @@
-# Algorithms - Final Project
+# University of Michigan-Dearborn: Algorithms - Final Project
 
 ## Problem
 
