@@ -1,47 +1,36 @@
-# University of Michigan-Dearborn: Algorithms - Final Project
+# Luggage Optimizer 🧳
 
-## Problem
+Welcome to the Luggage Optimizer, a project developed as part of the Algorithms course at the University of Michigan-Dearborn. Help Eiffel Baguette, an exchange student, maximize the value of items he can pack in his luggage while adhering to flight regulations.
 
-Eiffel Baguette, a #1 student in the ESIEA who came to UMich for study, has one really bad habit - he never packs his luggage beforehand. As always, Eiffel sat down in his dorm room, trying to prepare his luggage in the last minute as usual. Due to the flight regulations, Eiffel was allowed to bring only one luggage, but it doesn't seem like all the items and souvenirs he wants to bring back to France will fit into that carrier.
+## 📖 Story
 
-Being a smart computer scientist aspirant, Eiffel started to design a table for each of the items he's got, and labeled 2 values - their volume, and their value to him.
+Eiffel Baguette, the top student from ESIEA studying at UMich, has a peculiar habit of packing his luggage at the last minute. With flight regulations allowing only one luggage, Eiffel needs to decide which items and souvenirs to pack to maximize their value to him.
 
-For example:
+Using his computer science skills, Eiffel labels each item with two values: its volume and its value to him. Your task is to help Eiffel determine the optimal set of items to pack.
 
-| Item       | Laptop | UMich Hoodie | Camera | English Dictionary |
-|------------|--------|--------------|--------|--------------------|
-| **Volume** | 4      | 4            | 2      | 6                  |
-| **Value**  | 7      | 8            | 10     | 4                  |
+## 📄 How to Use
 
-As stated before, as the volume of the luggage is limited, the total sum of the volume of the items should not exceed $w$. Given the table, find out how can Eiffel maximize the value of his luggage.
+1. **Input Data**: Place your input data in the `input.txt` file located at the project root.
+2. **Run the Program**: Execute the `App.java` file located in the `src` directory.
+3. **View the Output**: The program will display the maximum value of items Eiffel can pack, along with the names of the selected items.
 
-## Input
+## 📜 Input Format
 
-The first line of the input gives the number of test cases, $C$.
-$C$ test cases follow. Each test case starts with a number of items Eiffel currently has, $N$, and the capacity of the luggage, $W$. Then, $N$ lines follow, each containing the name, volume, and value of the item. The name of the item doesn't have empty space, and is no longer than 20 characters, and the volume/value of the items are natural numbers no bigger than 1000.
+- The first line specifies the number of test cases, `C`.
+- Each test case starts with the number of items, `N`, and the luggage capacity, `W`.
+- This is followed by `N` lines, each detailing the name, volume, and value of an item.
 
-Input data must be in the `input.txt` file at the project root.
+## 🖨️ Output Format
 
-## Output
+For each test case, the program outputs:
 
-For each test case, output one line containing the maximum value of the sum of the values of the item, followed by the item count. After that, print the name of the items in each line. If there are 2 different items which have same volume and value, either one can be printed as a solution.
+1. The maximum value of the sum of the item values.
+2. The count of items selected.
+3. The names of the selected items.
 
-## Limits
+## 🚀 Sample
 
-Memory limit: 64 MB.
-
-Time limit: 2 seconds (2000 ms).
-
-$1 \leq C \leq 50$
-
-$1 \leq N \leq 100$
-
-$1 \leq W \leq 1000$
-
-## Sample
-
-### Sample Input
-
+**Input**:
 ```
 2
 6 10
@@ -60,8 +49,7 @@ dumbell 2 5
 dictionary 10 4
 ```
 
-### Sample Output
-
+**Output**:
 ```
 24 3
 laptop
@@ -73,3 +61,12 @@ camera
 xbox
 grinder
 ```
+
+
+## 📏 Constraints
+
+- Memory limit: 64 MB.
+- Time limit: 2 seconds (2000 ms).
+- 1 ≤ `C` ≤ 50
+- 1 ≤ `N` ≤ 100
+- 1 ≤ `W` ≤ 1000
